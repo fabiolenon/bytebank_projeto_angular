@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bytebank';
+  transferencia: any;
 
   transferir($evnet) {
     console.log($evnet);
+    this.transferencia = $evnet;
   }
 }
